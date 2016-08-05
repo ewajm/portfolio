@@ -1,11 +1,38 @@
 body {
   max-width: 1080px;
   margin: 0 auto;
-  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
 }
 
-span {
+h1 {
+  font-size: 400%;
+  color: #3F5C56;
+  font-weight: bold;
+}
+
+h2 {
+  color: #253C37;
+  font-weight: bold;
+}
+
+#about span {
   font-size: .9em;
+  float: right;
+  margin-top: 10px;
+}
+
+
+
+.navbar-brand {
+  font-size: 1em;
+}
+
+.container-fluid:not(#navcontainer){
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header {
+  text-align: center;
 }
 
 a {
@@ -20,29 +47,11 @@ a:hover, a:active {
   color: #44369E;
 }
 
-.navbar-brand {
-  font-size: 1em;
-}
-
-.container-fluid:not(#navcontainer){
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.header {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.header h1{
-  font-size: 400%;
-}
-
 .header img{
-  max-width: 300px;
+  max-width: 250px;
   display: block;
   margin: 0 auto;
-  border: solid 2px
+  border: solid 4px #3F5C56;
 }
 
 .row {
@@ -52,6 +61,7 @@ a:hover, a:active {
 .row > [class*='col-']{
   margin-top: 0;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .repolink {
@@ -73,6 +83,10 @@ a:hover, a:active {
   text-align: center;
   margin-top: 4rem;
   width: 100%;
+}
+
+.glow {
+  text-shadow: white 0 0 10px;
 }
 
 .light-back {
@@ -124,18 +138,31 @@ a:hover, a:active {
   .row.match-my-cols > [class*='col-']{
     display: flex;
     flex-direction: column;
-    padding-top: 0px;
   }
 }
 
 
 @media screen and (min-width: 992px) {
+  body {
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+  }
+
+  .header img{
+    width: 300px;
+    max-width: 300px;
+  }
+
+  .header {
+    margin-top: 40px;
+  }
+
   .header h1{
     margin-top: 150px;
   }
 
-  .small-only {
-    display: none;
+  .container-fluid:not(#navcontainer){
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   #portfolio h3 {
