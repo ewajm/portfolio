@@ -13,7 +13,7 @@ _A single-page portfolio that features an introduction as well as a porfolio sec
 The site is live [here](http://ewajm.github.io/portfolio).
 It can be viewed in the browser without any additional setup required.
 
-# Technologies Used
+## Technologies Used
 
 * HTML
 * CSS

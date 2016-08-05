@@ -1,0 +1,33 @@
+.row.match-my-cols{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header.row.match-my-cols{
+  align-items: center;
+}
+
+.row.match-my-cols > [class*='col-']{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  text-align: center;
+  font-size: x-small;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1{
+  font-size: 400%;
+}
+
+.header img{
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border: solid 2px
+}
