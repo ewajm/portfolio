@@ -1,39 +1,37 @@
 body {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+}
+
+span {
+  font-size: .9em;
+}
+
+a {
+  color: #1E1170;
+}
+
+a:visited {
+  color: #184582;
+}
+
+a:hover, a:active {
+  color: #44369E;
 }
 
 .navbar-brand {
   font-size: 1em;
 }
 
-.row.match-my-cols{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row.match-my-cols > [class*='col-']{
-  display: flex;
-  flex-direction: column;
-}
-
-.repolink {
-  text-align: right;
-}
-
-.footer {
-  text-align: center;
-  font-size: x-small;
-}
-
-.social {
-  font-size: 6rem;
-  text-align: center;
-  margin-top: 4rem;
+.container-fluid:not(#navcontainer){
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header {
   text-align: center;
+  margin-top: 20px;
 }
 
 .header h1{
@@ -45,4 +43,103 @@ body {
   display: block;
   margin: 0 auto;
   border: solid 2px
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.row > [class*='col-']{
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.repolink {
+  text-align: right;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  font-size: x-small;
+}
+
+#about p {
+  font-size: medium;
+}
+
+#about .social {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.light-back {
+  background-color: #96DFCF;
+}
+
+.med-back {
+  background-color: #62C4AE;
+}
+
+.dark-back {
+  background-color: #3DA890;
+}
+
+.ooze-back {
+  background-color: thistle;
+}
+
+.peru-back{
+  background-color: white;
+}
+
+.tic-back {
+  background-color: #AFB8D7;
+}
+
+.sim-back {
+  background-image: url(../img/pool-sm.png);
+  background-repeat: repeat;
+  color: white;
+}
+
+.gradient {
+  background: #62C4AE;
+  background: -webkit-linear-gradient(white, #0D7F66);
+  background: -o-linear-gradient(white, #0D7F66);
+  background: -moz-linear-gradient(white, #0D7F66);
+  background: linear-gradient(white, #3DA890);
+}
+
+
+/*********Media Queries********/
+@media screen and (min-width: 768px){
+  .row.match-my-cols{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row.match-my-cols > [class*='col-']{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .header h1{
+    margin-top: 150px;
+  }
+
+  .small-only {
+    display: none;
+  }
+
+  #portfolio h3 {
+    font-size: 2rem;
+  }
+
 }

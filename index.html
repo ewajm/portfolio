@@ -3,14 +3,15 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Portfolio: EManek</title>
   </head>
-  <body data-spy="scroll" data-taret="#mynav">
+  <body class="gradient" data-spy="scroll" data-taret="#mynav">
     <!--nav-->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+      <div id="navcontainer" class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav" aria-expanded="false">
             <span class="sr-only">Toggle Navigation</span>
@@ -32,18 +33,18 @@
       </div><!--end container-fluid-->
     </nav>
     <!-- end nav-->
-
+    <div class="wrapper">
     <!--splash 'page'-->
-    <div class="header container-fluid">
+    <div class="header light-back container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <h1>Ewa</h1>
+          <h1 class="animated fadeIn">Ewa</h1>
         </div>
         <div class="col-md-4">
           <img class="img-responsive" src="img/me.jpg" alt="picture of Ewa Manek">
         </div>
         <div class="col-md-4">
-          <h1>Manek</h1>
+          <h1 class="animated fadeIn">Manek</h1>
         </div>
       </div>
     </div><!--end container-fluid-->
@@ -51,13 +52,15 @@
     <!--end splash page-->
 
     <!--portfolio section-->
-    <div id="portfolio" class="container-fluid">
+    <div id="portfolio" class="med-back container-fluid">
       <h2>Portfolio</h2>
       <div class="row match-my-cols">
-        <div class="col-md-3 col-sm-6">
-          <a href="http://ewajm.github.io/shelter/"><img class="img-responsive center-block" src="img/ooze.jpg" alt="Screenshot of Oozetopia website, a fictional ooze shelter and adoption center"></a>
+
+        <div class="col-md-3 col-sm-6 ooze-back">
+          <a href="http://ewajm.github.io/shelter/"><img class="img-responsive center-block" src="img/ooze.png" alt="Screenshot of Oozetopia website, a fictional ooze shelter and adoption center"></a>
         </div>
-        <div class="col-md-3 col-sm-6">
+
+        <div class="col-md-3 col-sm-6 ooze-back">
           <h3>Fictional Shelter Website</h3>
           <p>Static, responsive website created at Epicodus practicing the following: </p>
           <ul>
@@ -66,10 +69,10 @@
           </ul>
           <p class ="repolink"><a href="https://github.com/ewajm/shelter">Github Link</a></p>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 peru-back">
           <a href="http://ewajm.github.io/peru/"><img class="img-responsive center-block" src="img/peru.png" alt="Screenshot of simple Machu Picchu website with no meaningful content"></a>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-sm-6 peru-back">
           <h3>Vacation Website</h3>
           <p>Static, responsive website created at Epicodus practicing the following: </p>
           <ul>
@@ -80,12 +83,11 @@
           <p class ="repolink"><a href="https://github.com/ewajm/peru">Github Link</a></p>
         </div>
       </div><!--end row-->
-
       <div class="row match-my-cols">
-        <div class="col-md-3 col-md-push-3 col-sm-6">
+        <div class="col-md-3 col-md-push-3 col-sm-6 tic-back">
           <a href="http://codepen.io/emanek/full/PzJYXV/"><img class="img-responsive center-block" src="img/tic.png" alt="Screenshot of website with tic tac toe game"></a>
         </div>
-        <div class="col-md-3 col-md-pull-3 col-sm-6">
+        <div class="col-md-3 col-md-pull-3 col-sm-6 tic-back">
           <h3>Tic Tac Toe</h3>
           <p>Static, responsive browser-based tic-tac-toe game created for Free Code Camp using: </p>
           <ul>
@@ -98,10 +100,10 @@
             <a href="https://gist.github.com/ewajm/f25e10851ac45399ab09fa21f7ed4b97">Github Gist Link</a>
           </p>
         </div>
-        <div class="col-md-3 col-md-push-3 col-sm-6">
+        <div class="col-md-3 col-md-push-3 col-sm-6 sim-back">
           <a href="http://codepen.io/emanek/full/Eyokpv/s"><img class="img-responsive center-block" src="img/simon.png" alt="Screenshot of simple website showcasing a simon game"></a>
         </div>
-        <div class="col-md-3 col-md-pull-3 col-sm-6">
+        <div class="col-md-3 col-md-pull-3 col-sm-6 sim-back">
           <h3>Simon Recreation</h3>
           <p>Static, responsive browser-based simon game created for Free Code Camp using: </p>
           <ul>
@@ -120,19 +122,24 @@
     <!--end portfolio-->
 
     <!--about me-->
-    <div id="about" class="container-fluid">
+    <div id="about" class="dark-back container-fluid">
       <div class="row match-my-cols">
         <div class="col-md-6">
           <h3>About:</h3>
-          <p>I am currently a student at Epicodues with the goal of becoming a professional developer.  I am primarily interested in backend work, and am familiar with: </p>
+          <p>
+            I am currently a student at Epicodus with the goal of becoming a professional developer.  I am primarily interested in backend work, and have experience in:
+          </p>
           <ol>
-            <li>JavaScript and Jquery</li>
-            <li>Java (especially as applied to Android)</li>
-            <li>Html and CSS</li>
+            <li><strong>JavaScript and Jquery</strong></li>
+            <li><strong>Java (especially as applied to Android)</strong></li>
+            <li><strong>Html and CSS</strong></li>
           </ol>
-          <p>In my spare time, I enjoy board/video games, crochet, and checking out Portland's craft beer scene. In a previous life, I got an MA in Modern East Asian Cultural Studies, so I am also available for rants about how Shinto does not actually exist and Orientalism.</p>
+          <p>
+            In my spare time, I enjoy board/video games, crochet, and checking out Portland's craft beer scene. In a previous life, I got an MA in Modern East Asian Cultural Studies, so I am <em>also</em> available for rants about how Shinto does not actually exist and Orientalism.<br>
+            <span>Also it's possible my favorite color is blue.</span>
+          </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
           <h3>More:</h3>
           <p class="social">
             <a href="https://www.linkedin.com/in/manekej"><b class="fa fa-linkedin-square"></b></a>
@@ -142,10 +149,11 @@
           </p>
         </div>
       </div><!--end row-->
-      <p class="footer">(C)<a href="mailt:manekej@gmail.com">EManek</a>.</p>
+
     </div><!--end container-fluid div-->
     <!--end about me-->
-
+    <p class="footer">(C)<a href="mailt:manekej@gmail.com">EManek</a>.</p>
+    </div><!--end wrapper div-->
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
