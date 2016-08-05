@@ -1,6 +1,6 @@
 # _Portfolio_
 
-#### _A Portfolio page with an introduction and list of my current project, 08/05/2016_
+#### _A Portfolio page with an introduction and list of my current and former projects, 08/05/2016_
 
 #### By **Ewa Manek**
 
