@@ -146,6 +146,10 @@ a:hover, a:active {
     display: flex;
     flex-direction: column;
   }
+
+  .repolink {
+    margin-top: auto;
+  }
 }
 
 
@@ -160,11 +164,16 @@ a:hover, a:active {
   }
 
   .header {
-    margin-top: 40px;
+    padding-top: 20px;
   }
 
   .header h1{
     margin-top: 150px;
+  }
+
+  .container-fluid .jumbotron {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .container-fluid:not(#navcontainer){
