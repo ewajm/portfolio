@@ -69,6 +69,7 @@ a:hover, a:active {
 .footer {
   text-align: center;
   font-size: x-small;
+  margin-top: 10px;
 }
 
 #about p {
