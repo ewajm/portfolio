@@ -1,6 +1,6 @@
 # _Portfolio_
 
-#### _A Portfolio page with an introduction and list of my current and former projects, 08/05/2016_
+#### _A Portfolio page with an introduction and list of my current and former projects, 08/06/2016_
 
 #### By **Ewa Manek**
 
@@ -18,6 +18,8 @@ It can be viewed in the browser without any additional setup required.
 * HTML
 * CSS
 * Bootstrap
+* jQuery
+* JavaScript
 
 ### License
 
