@@ -2,21 +2,15 @@ body {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
 }
 
-.jumbotron h1 {
-  color: #3A727F;
-}
-
-.jumbotron h2 {
-  font-size: 2rem;
-  margin-top: 30px;
-  margin-bottom: -80px;
-}
-
-h2 {
+h1 {
   color: #3A727F;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+  font-family: serif;
 }
 
 .navbar-brand {
@@ -72,6 +66,12 @@ a:hover, a:active {
   margin-top: 10px;
 }
 
+.portfolio-img {
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(51,51,51,1);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(51,51,51,1);
+  box-shadow: 0px 10px 15px 0px rgba(51,51,51,1);
+}
+
 #about p {
   font-size: medium;
 }
@@ -115,30 +115,34 @@ a:hover, a:active {
   background-color: #9CA6C9;
 }
 
-.ooze-back {
-  background-color: thistle;
+.first-back {
+  background-color: #0097A7;
+  color: #78018d;
 }
 
-.peru-back{
-  background-color: white;
+.second-back{
+  background-color: #607D8B;
+  color: #FFA0A0;
 }
 
-.tic-back {
-  background-color: #AFB8D7;
+.third-back {
+  background-color: #754f44;
+  color: #FBFFB9;
 }
 
-.sim-back {
-  background-image: url(../img/pool-sm.png);
-  background-repeat: repeat;
-  color: white;
+.fourth-back {
+  background-color: #632a50;
+  color: #C2E812;
 }
 
-.cat-back {
-  background-color: #e6e6e6;
+.sixth-back {
+  background-color: #2b2118;
+  color: #b3b6b7;
 }
 
-.quote-back {
-  background-color: #51b46d;
+.fifth-back {
+  background-color: #000;
+  color: #FFF;
 }
 
 .gradient {
@@ -160,6 +164,10 @@ a:hover, a:active {
   .row.match-my-cols > [class*='col-']{
     display: flex;
     flex-direction: column;
+  }
+
+  .row.match-my-cols > [class*='col-'] > a{
+    align-self: center;
   }
 
   .repolink {
@@ -184,11 +192,6 @@ a:hover, a:active {
     margin-top: 100px;
   }
 
-  .header img{
-    width: 300px;
-    max-width: 300px;
-  }
-
   .header {
     padding-top: 20px;
   }
@@ -197,24 +200,24 @@ a:hover, a:active {
     margin-top: 150px;
   }
 
-  .jumbotron h2 {
-    font-size: 3rem;
-    margin-top: 80px;
-    margin-bottom: -80px;
-    color: none;
-  }
-
-  .container-fluid .jumbotron {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
   .container-fluid:not(#navcontainer){
     margin-bottom: 3rem;
   }
 
   #portfolio h3 {
     font-size: 2rem;
+  }
+
+  .img-container {
+    margin: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
   }
 
 }
