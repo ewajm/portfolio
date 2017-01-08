@@ -189,7 +189,7 @@ a:hover, a:active {
 
 @media screen and (min-width: 992px) {
   body {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .header {
