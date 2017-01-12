@@ -87,12 +87,6 @@ a:hover, a:active {
   margin-top: 10px
 }
 
-#about span {
-  font-size: .9em;
-  float: right;
-  margin: 10px 0;
-}
-
 /*** colors/other utility css ***/
 
 .glow {
