@@ -72,8 +72,8 @@ a:hover, a:active {
   box-shadow: 0px 10px 15px 0px rgba(51,51,51,1);
 }
 
-#about p {
-  font-size: medium;
+#about p, #about li, #portfolio p, #portfolio li {
+  font-size: large;
 }
 
 #about .social {
@@ -192,6 +192,10 @@ a:hover, a:active {
 
   #portfolio h3 {
     font-size: 2rem;
+  }
+
+  #about p, #about li, #portfolio p, #portfolio li {
+  font-size: medium;
   }
 
   .img-container {
