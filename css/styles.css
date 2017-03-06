@@ -182,6 +182,7 @@ a:hover, a:active {
     padding: 0 10px;
     margin-top: 20px;
   }
+
 }
 
 
@@ -216,8 +217,6 @@ a:hover, a:active {
 
 }
 
-/* change bootsrap nav breakpoint */
-
 @media (max-width: 991px) {
   .navbar-header {
       float: none;
@@ -231,6 +230,7 @@ a:hover, a:active {
   .navbar-collapse {
       border-top: 1px solid transparent;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      font-size: 18px;
   }
   .navbar-fixed-top {
       top: 0;
@@ -238,6 +238,7 @@ a:hover, a:active {
   }
   .navbar-collapse.collapse {
       display: none!important;
+      font-size: x-large;
   }
   .navbar-nav {
       float: none!important;
@@ -257,7 +258,7 @@ a:hover, a:active {
     float: left !important;
     height: 50px;
     padding: 15px 15px;
-    font-size: 18px;
+    font-size: x-large;
     line-height: 20px;
   }
 }
