@@ -173,6 +173,10 @@ a:hover, a:active {
     font-size: 3rem;
   }
 
+  #about p, #about li, #portfolio p, #portfolio li {
+  font-size: x-large;
+  }
+
   #about .fa {
     font-size: 6rem;
     padding: 0 10px;
